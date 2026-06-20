@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "ui-monospace", SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  body {
+    background-color: #f1f5f9; /* slate-100 for Vibrant Palette's clean layout */
+    color: #1e293b; /* dark slate-800 text */
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom scrollbar styling for elegant transactions list */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(241, 245, 249, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(233, 30, 99, 0.25); /* #E91E63 with opacity */
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(233, 30, 99, 0.5);
+}
+
